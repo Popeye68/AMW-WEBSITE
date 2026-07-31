@@ -383,12 +383,5 @@ bottle.style.transform=`translate(${x}px,${y}px)`;
 
     /*=========================================
       CONSOLE MESSAGE
-    =========================================*/
-
-    console.log(
-        "%cAMW Mineral Water Website Loaded Successfully",
-        "color:#00AEEF;font-size:16px;font-weight:bold;"
-    );
-
-});
+    =========================================*
 
