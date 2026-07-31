@@ -1,185 +1,273 @@
-/* ==========================
-   Responsive Design
-========================== */
+/*==================================================
+RESPONSIVE.CSS
+AMW MINERAL WATER
+==================================================*/
 
-@media (max-width:1100px){
 
-.hero{
-flex-direction:column;
-text-align:center;
-}
 
-.hero-left,
-.hero-right{
-width:100%;
-}
+/*==================================================
+1200px
+==================================================*/
 
-.hero-right{
-margin-top:40px;
-}
+@media(max-width:1200px){
 
-.about{
-flex-direction:column;
-}
+.container{
 
-.about-image,
-.about-text{
-width:100%;
-text-align:center;
-}
-
-.product-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.steps{
-grid-template-columns:repeat(2,1fr);
-}
-
-footer{
-grid-template-columns:1fr;
-text-align:center;
-}
-
-nav{
-display:none;
-}
+width:92%;
 
 }
-
-@media (max-width:768px){
 
 .hero-left h1{
-font-size:42px;
+
+font-size:60px;
+
+}
+
+.hero-wrapper{
+
+gap:50px;
+
+}
+
+.hero-bottle{
+
+width:330px;
+
+}
+
+.section-title h2{
+
+font-size:38px;
+
+}
+
+.about-content h2{
+
+font-size:40px;
+
+}
+
+.branding-left h2{
+
+font-size:40px;
+
+}
+
+.process-wrapper{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.products-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.why-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+
+
+/*==================================================
+992px
+==================================================*/
+
+@media(max-width:992px){
+
+section{
+
+padding:80px 0;
+
+}
+
+.nav-links{
+
+position:fixed;
+
+top:90px;
+
+left:-100%;
+
+width:280px;
+
+height:calc(100vh - 90px);
+
+background:#fff;
+
+display:flex;
+
+flex-direction:column;
+
+padding:40px;
+
+gap:25px;
+
+transition:.4s;
+
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+.nav-links.active{
+
+left:0;
+
+}
+
+.nav-links a{
+
+color:var(--dark)!important;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.quote-btn{
+
+display:none;
+
+}
+
+.hero{
+
+height:auto;
+
+padding:170px 0 120px;
+
+}
+
+.hero-wrapper{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-left{
+
+order:2;
+
+}
+
+.hero-right{
+
+order:1;
+
+min-height:auto;
+
 }
 
 .hero-left p{
-font-size:16px;
+
+margin:auto auto 35px;
+
 }
 
-.product-grid{
-grid-template-columns:1fr;
+.hero-buttons{
+
+justify-content:center;
+
 }
 
-.steps{
-grid-template-columns:1fr;
+.hero-features{
+
+justify-content:center;
+
 }
 
-.trust{
+.hero-bottle{
+
+width:300px;
+
+}
+
+.water-splash{
+
+width:500px;
+
+}
+
+.stats{
+
+margin-top:-40px;
+
+}
+
+.stats-wrapper{
+
 grid-template-columns:repeat(2,1fr);
-}
-
-header{
-
-padding:15px 20px;
 
 }
 
-.logo img{
+.about-wrapper{
 
-width:130px;
+grid-template-columns:1fr;
 
-}
-
-.quote{
-
-padding:10px 18px;
-
-font-size:14px;
+gap:60px;
 
 }
 
-}
+.about-image{
 
-@media (max-width:500px){
+max-width:650px;
 
-.hero{
-
-padding-top:130px;
+margin:auto;
 
 }
 
-.hero-left h1{
+.contact-wrapper{
 
-font-size:34px;
-
-}
-
-.title h2{
-
-font-size:30px;
+grid-template-columns:1fr;
 
 }
 
-.branding h2{
-
-font-size:32px;
-
-}
-
-.cta h2{
-
-font-size:34px;
-
-}
-
-}
-.private-label{
+.branding-wrapper{
 
 flex-direction:column;
 
 text-align:center;
-
-}
-
-.private-label .left,
-.private-label .right{
-
-width:100%;
-
-}
-
-.features{
-
-grid-template-columns:1fr;
-
-}
-
-.industry-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-.quote-section form{
-
-grid-template-columns:1fr;
-
-}
-
-.quote-section textarea,
-.quote-section button{
-
-grid-column:auto;
-
-}
-
-@media(max-width:600px){
-
-.industry-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
-.stats{
-
-grid-template-columns:repeat(2,1fr);
 
 }
 
 .gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery-item.large{
+
+grid-row:auto;
+
+}
+
+.industry-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.process-wrapper{
 
 grid-template-columns:repeat(2,1fr);
 
@@ -191,70 +279,416 @@ grid-template-columns:1fr;
 
 }
 
-@media(max-width:650px){
+}
+/*==================================================
+768px
+==================================================*/
 
-.stats{
+@media(max-width:768px){
 
-grid-template-columns:1fr;
+.hero-left h1{
+
+font-size:46px;
+
+line-height:1.15;
 
 }
 
-.gallery-grid{
+.hero-left p{
 
-grid-template-columns:1fr;
-
-}
+font-size:16px;
 
 }
-@media(max-width:900px){
 
-.contact{
+.hero-buttons{
 
 flex-direction:column;
 
+align-items:center;
+
 }
 
-.contact-left,
+.btn-primary,
+.btn-secondary{
 
-.contact-right{
+width:230px;
 
-width:100%;
+justify-content:center;
+
+}
+
+.section-title{
+
+margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+font-size:32px;
+
+}
+
+.products-grid,
+.why-grid,
+.gallery-grid,
+.process-wrapper,
+.industry-grid,
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.stats-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.about-content h2{
+
+font-size:34px;
+
+}
+
+.branding-left h2{
+
+font-size:34px;
+
+}
+
+.contact-info h2{
+
+font-size:34px;
+
+}
+
+.contact-form{
+
+padding:30px;
+
+}
+
+.hero-wave svg{
+
+height:90px;
+
+}
+
+}
+
+
+
+
+
+/*==================================================
+576px
+==================================================*/
+
+@media(max-width:576px){
+
+.container{
+
+width:94%;
+
+}
+
+section{
+
+padding:70px 0;
+
+}
+
+.logo img{
+
+height:52px;
+
+}
+
+.hero{
+
+padding:150px 0 90px;
+
+}
+
+.hero-left .tag{
+
+font-size:13px;
+
+padding:8px 16px;
+
+}
+
+.hero-left h1{
+
+font-size:38px;
+
+letter-spacing:-1px;
+
+}
+
+.hero-left p{
+
+font-size:15px;
+
+line-height:1.8;
+
+}
+
+.hero-bottle{
+
+width:240px;
+
+}
+
+.water-splash{
+
+width:360px;
+
+}
+
+.section-title h2{
+
+font-size:28px;
+
+}
+
+.stat-card{
+
+padding:30px 20px;
+
+}
+
+.stat-card h2{
+
+font-size:38px;
+
+}
+
+.product-card{
+
+padding:28px;
+
+}
+
+.product-image{
+
+height:210px;
+
+}
+
+.product-image img{
+
+max-height:190px;
+
+}
+
+.about-content h2{
+
+font-size:30px;
+
+}
+
+.experience-box{
+
+position:static;
+
+margin-top:20px;
+
+display:inline-block;
+
+}
+
+.feature-item{
+
+align-items:flex-start;
+
+}
+
+.contact-form{
+
+padding:25px;
+
+}
+
+footer{
 
 text-align:center;
 
 }
 
-.menu-btn{
+.social-icons{
 
-display:block;
+justify-content:center;
 
 }
 
-nav{
+}
 
-display:none;
 
-position:absolute;
 
-top:80px;
 
-left:0;
+
+/*==================================================
+425px
+==================================================*/
+
+@media(max-width:425px){
+
+.hero-left h1{
+
+font-size:34px;
+
+}
+
+.section-title h2{
+
+font-size:26px;
+
+}
+
+.btn-primary,
+.btn-secondary{
 
 width:100%;
 
-background:white;
+}
 
-flex-direction:column;
+.hero-buttons{
 
-padding:25px;
-
-box-shadow:0 15px 25px rgba(0,0,0,.08);
+width:100%;
 
 }
 
-nav.active{
+.contact-list div{
 
-display:flex;
+font-size:15px;
+
+}
+
+.contact-list i{
+
+width:48px;
+
+height:48px;
+
+font-size:18px;
+
+}
+
+.whatsapp-btn,
+.call-btn{
+
+width:54px;
+
+height:54px;
+
+font-size:20px;
+
+right:18px;
+
+}
+
+.whatsapp-btn{
+
+bottom:88px;
+
+}
+
+}
+
+
+
+
+
+/*==================================================
+375px
+==================================================*/
+
+@media(max-width:375px){
+
+.hero-left h1{
+
+font-size:30px;
+
+}
+
+.hero-left p{
+
+font-size:14px;
+
+}
+
+.section-title h2{
+
+font-size:24px;
+
+}
+
+.product-content h3{
+
+font-size:22px;
+
+}
+
+.price{
+
+font-size:24px;
+
+}
+
+.order-btn{
+
+padding:10px 18px;
+
+font-size:14px;
+
+}
+
+}
+
+
+
+
+
+/*==================================================
+320px
+==================================================*/
+
+@media(max-width:320px){
+
+.hero-left h1{
+
+font-size:27px;
+
+}
+
+.hero-bottle{
+
+width:200px;
+
+}
+
+.contact-form{
+
+padding:18px;
+
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+
+padding:14px;
+
+font-size:14px;
+
+}
+
+.footer-grid{
+
+gap:25px;
 
 }
 
