@@ -2562,19 +2562,18 @@ color:rgba(255,255,255,.75);
 FLOATING BUTTONS
 ==================================================*/
 
-.whatsapp-btn,
+/*=========================================
+FLOATING BUTTONS FIX
+=========================================*/
 
+.whatsapp-btn,
 .call-btn{
 
 position:fixed;
 
-right:25px;
+width:56px;
 
-width:60px;
-
-height:60px;
-
-border-radius:50%;
+height:56px;
 
 display:flex;
 
@@ -2582,21 +2581,25 @@ align-items:center;
 
 justify-content:center;
 
+border-radius:50%;
+
 color:#fff;
 
-font-size:24px;
-
-box-shadow:0 15px 35px rgba(0,0,0,.18);
+font-size:22px;
 
 z-index:999;
 
-transition:.35s;
+box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+transition:.3s;
+
+right:16px;   /* Screen ke andar */
 
 }
 
 .whatsapp-btn{
 
-bottom:100px;
+bottom:90px;
 
 background:#25D366;
 
@@ -2604,17 +2607,24 @@ background:#25D366;
 
 .call-btn{
 
-bottom:25px;
+bottom:20px;
 
 background:var(--primary);
 
 }
 
 .whatsapp-btn:hover,
-
 .call-btn:hover{
 
-transform:scale(1.12);
+transform:scale(1.08);
+
+}
+
+/* Horizontal scroll completely band */
+html,
+body{
+
+overflow-x:hidden;
 
 }
 /*==================================================

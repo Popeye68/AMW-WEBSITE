@@ -693,3 +693,31 @@ gap:25px;
 }
 
 }
+@media (max-width:576px){
+
+.whatsapp-btn,
+.call-btn{
+
+right:12px;
+
+width:52px;
+
+height:52px;
+
+font-size:20px;
+
+}
+
+.whatsapp-btn{
+
+bottom:85px;
+
+}
+
+.call-btn{
+
+bottom:18px;
+
+}
+
+}
