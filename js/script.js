@@ -391,3 +391,12 @@ bottle.style.transform=`translate(${x}px,${y}px)`;
     );
 
 });
+
+window.addEventListener("load", () => {
+    document.querySelectorAll("body *").forEach(el => {
+        if (el.scrollWidth > document.documentElement.clientWidth) {
+            console.log("Overflow Element:", el);
+            el.style.outline = "3px solid red";
+        }
+    });
+});
